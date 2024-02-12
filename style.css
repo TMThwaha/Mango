@@ -1,0 +1,738 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    height: 30px;
+    width: calc(100% - 2px);
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    border: solid .1px rgb(140, 110, 110);
+}
+
+.second-navbar {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+                                    
+
+.content {
+    width: 25%;
+    /* height: 64px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 400;
+
+
+}
+
+.content ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.content li:hover{
+    
+    text-decoration: underline black;
+    cursor: pointer;
+}
+
+.contenttwo {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+}
+.contenttwo-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.contenttwo-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.contenttwo-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.contenttwo-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}    
+.material-symbols-outlined{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 5px;
+
+
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 25%;
+    height: 64px;
+}
+
+.three-navbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(183, 35, 35);
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+}
+
+.three-navbar a {
+    color: rgb(255, 255, 255);
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.sectionone {
+    width: 100%;
+    height: 500px;
+    margin-top: 2px;
+    position: relative;
+    display: flex;
+
+}
+
+.sectionone img {
+    width: 100%;
+    height: 100%;
+}
+
+.sectionone P {
+    position: absolute;
+}
+
+.sectionone-content {
+    width: 100%;
+    position: absolute;
+    top: 230px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+}
+
+.sectionone-content button {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+}
+.sectionone-content button:hover{
+    background-color: grey;
+}
+
+
+.sectionone-content p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.sectiontwo {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    margin-top: 1px;
+    gap: 2px;
+
+}
+.shade{
+    background-color: rgba(0, 0, 0, 0.559);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+}
+.left-1{
+    position: relative;
+    background:url("img 2/he_landings_NN_010102.jpg") ;
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.left-1 h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    position: absolute;
+    left: 50px;
+    color: rgb(255, 255, 255);
+
+}
+.left-1 a{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50px;
+}
+.left-1 h1,.left-1 a{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+
+}
+.left-1:hover .shade{
+    opacity: 1;
+}
+.center-1{
+    position: relative;
+    background:url("img 2/he_landings_pantalones_010102.jpg");
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.center-1 h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    position: absolute;
+    left: 50px;
+    color: rgb(255, 255, 255);
+
+}
+.center-1 a{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 60px;
+}
+.center-1 h1,.center-1 a{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+}
+.center-1:hover .shade{
+    opacity: 1;
+}
+.right-1{
+    position: relative;
+    background:url("img 2/he_landings_jerseisycardigans_0102.jpg");
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    z-index: 4;
+}
+.right-1 h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    position: absolute;
+    left: 50px;
+    color: rgb(255, 255, 255);
+
+}
+.right-1 a{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50px;
+}
+.right-1 h1,.right-1 a{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+
+}
+.right-1:hover .shade{
+    opacity: 1;
+}
+
+.sectionthree {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    margin-top: 1px;
+    gap: 2px;
+}
+.left-2{
+    position: relative;
+    background: url("img 2/he_landing_trajes_2901.jpg");
+    background-size: cover;
+    background-position: center;
+    flex: 2;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.left-2 h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    position: absolute;
+    left: 50px;
+    color: rgb(255, 255, 255);
+
+}
+.left-2 a{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50px;
+}
+.left-2 h1,.left-2 a{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+
+}
+.left-2:hover .shade{
+    opacity: 1;
+}
+
+.right-2{
+    position: relative;
+    background:url("img 2/he_landings_abrigos_010102.jpg");
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.right-2 h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    position: absolute;
+    left: 50px;
+    color: rgb(255, 255, 255);
+
+}
+.right-2 a{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50px;
+}
+.right-2 h1,.right-2 a{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+}
+.right-2:hover .shade{
+    opacity: 1;
+}
+
+.sectionfour {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    /* background-color: brown; */
+    margin-top: 1px;
+    gap: 2px;
+
+}
+.left-3{
+    position: relative;
+    background:url("img 2/he_landings_bestseller_010102.jpg");
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.left-3 h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    position: absolute;
+    left: 50px;
+    color: rgb(255, 255, 255);
+}
+.left-3 a{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50px;
+}
+.left-3 h1,.left-3 a{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+}
+.left-3:hover .shade{
+    opacity: 1;
+}
+.center-3{
+    position: relative;
+    background:url("img 2/he_landings_camisas_010102.jpg");
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.center-3 h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    position: absolute;
+    left: 50px;
+    color: rgb(255, 255, 255);
+
+}
+.center-3 a{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50px;
+}
+.center-3 h1,.center-3 a{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+
+}
+.center-3:hover .shade{
+    opacity: 1;
+}
+.right-3{
+    position: relative;
+    background:url("img 2/he_landings_chaquetasobrecamisa_010102.jpg");
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.right-3 h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    position: absolute;
+    left: 50px;
+    color: rgb(255, 255, 255);
+
+}
+.right-3 a{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50px;
+}
+.right-3 h1,.right-3 a{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+}
+.right-3:hover .shade{
+    opacity: 1;
+}
+.left-1 h1,.left-1 a,.center-1 h1,.center-1 a,.right-1 h1,.right-1 a,.left-2 h1,.left-2 a,.right-2 h1,.right-2 a,.left-3 h1,.left-3 a,.center-3 h1,.center-3 a,.right-3 h1,.right-3 a{
+    z-index: 7;
+}
+.otherlines{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255)F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.sectionfive{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    margin-top: 1px;
+
+}
+.shade2{
+    background-color: rgba(0, 0, 0, 0.559);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+}
+
+.fiveleft{
+    background:url("img 2/she_nuestraslineas_1101.jpg");
+    flex: 1;
+    height: 100%;
+    /* width: 100%; */
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+.fiveleft:hover .shade{
+    opacity: 1;
+}
+.fivecenter{
+    background: url("img 2/kids_MM_NuestrasLineas_0911_mobile.jpg");
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    /* width: 100%; */
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+.fivecenter:hover .shade{
+    opacity: 1;
+}
+.fiveright{
+    background:url("img 2/teen_MM_NuestrasLineas_0911_mobile.jpg");
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+    
+}
+.fiveright:hover .shade{
+    opacity: 1;
+}
+.sectionfive button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 10px 20px;
+    z-index: 7;
+    cursor: pointer;
+    position: absolute;
+    bottom: 70px;
+
+}
+.sectionfive button:hover{
+    background-color: grey;
+}
+    
+
+.men{
+    background-color:rgb(255, 255, 255);
+    justify-content: center;
+    height:70px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.men h1{
+    display: flex;
+    justify-content: center;
+}
+.footerone{
+    /* width: 100%; */
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 15px;
+    gap: 30px;
+    margin-left: 40px;
+   
+}
+.footerone-content-1{
+    width: 25%;
+    height: 300px;
+    
+}
+.footerone-content-2{
+    width: 25%;
+    height: 300px;
+  
+}
+.footerone ul{
+    list-style: none;
+    font-family: MangoSans;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .3px;
+    height: 22px;
+    color: #000;
+    border-bottom: 1px solid transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.footerone li:hover{
+    text-decoration: underline;
+}
+.footertwo{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    /* flex-direction: column; */
+    border-top: 1px;  
+    justify-content: center;
+    border-top: solid 1px gray;
+}
+.footertwo-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+    line-height: 30px;
+}
+
+.footertwo input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-bottom: solid 1px;
+}
+
+.footertwo input:focus{
+    outline: none;
+}
+.footertwo button{
+    padding: 15px;
+    width: 250px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    cursor: pointer;
+}
+.p1{
+    font-size: 7px;
+}
+span{
+    font-size: medium;
+    cursor: pointer;
+}
+.footertwo-contentone{
+    height: 300px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+
+}
+.footertwo-contentone ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    /* cursor: pointer; */
+}
+.footertwo-contentone li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.icons{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons a{
+    color: black ;
+    transform: scale(1.1);
+}
+.chat{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 7;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    height:30px;
+
+}
+.end a{
+    text-decoration: none;
+    color: black;
+}
